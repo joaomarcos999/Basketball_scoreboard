@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <title>Basketball Scoreboard</title>
+    </head>
+    <body onload="scoreboard()">
+        <div class="center-rectangle">
+            <h1>Basketball Scoreboard</h1>
+            <div id="scoreboard">
+                <div class="team">
+                    <h2>Home Team</h2>
+                    <span id="home-score">0</span>
+                    <div>
+                        <button onclick="addHomeScore(1)">+1</button>
+                        <button onclick="addHomeScore(2)">+2</button>
+                        <button onclick="addHomeScore(3)">+3</button>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/09/46/basketball-155997_1280.png" alt="Basketball" class="center-image">
+                    <div id="timer">60:00</div>
+                </div>
+                <div class="team">
+                    <h2>Away Team</h2>
+                    <span id="guest-score">0</span>
+                    <div>
+                        <button onclick="addGuestScore(1)">+1</button>
+                        <button onclick="addGuestScore(2)">+2</button>
+                        <button onclick="addGuestScore(3)">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
